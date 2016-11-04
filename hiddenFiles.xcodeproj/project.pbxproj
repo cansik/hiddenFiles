@@ -152,9 +152,11 @@
 				TargetAttributes = {
 					949BE3401A6DAEAC00A1CE74 = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 0810;
 					};
 					949BE3501A6DAEAC00A1CE74 = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 0810;
 						TestTargetID = 949BE3401A6DAEAC00A1CE74;
 					};
 				};
@@ -320,6 +322,7 @@
 				INFOPLIST_FILE = hiddenFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -331,6 +334,7 @@
 				INFOPLIST_FILE = hiddenFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -350,6 +354,7 @@
 				INFOPLIST_FILE = hiddenFilesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hiddenFiles.app/Contents/MacOS/hiddenFiles";
 			};
 			name = Debug;
@@ -366,6 +371,7 @@
 				INFOPLIST_FILE = hiddenFilesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/hiddenFiles.app/Contents/MacOS/hiddenFiles";
 			};
 			name = Release;

@@ -14,15 +14,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBOutlet weak var statusMenu: NSMenu!
     @IBOutlet weak var window: NSWindow!
     
-    let statusItem = NSStatusBar.systemStatusBar().statusItemWithLength(-1)
+    let statusItem = NSStatusBar.system().statusItem(withLength: -1)
     
-    func applicationDidFinishLaunching(aNotification: NSNotification) {
+    func applicationDidFinishLaunching(_ aNotification: Notification) {
         statusItem.title = "HF"
         statusItem.menu = statusMenu
     }
     
-    @IBAction func menuClicked(sender: NSMenuItem) {
-        let task = NSTask()
+    @IBAction func menuClicked(_ sender: NSMenuItem) {
+        let task = Process()
         task.launchPath = "/usr/bin/defaults"
         
         if(sender.state == NSOnState) {
@@ -36,7 +36,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         task.launch()
         task.waitUntilExit()
         
-        let killtask = NSTask()
+        let killtask = Process()
         killtask.launchPath = "/usr/bin/killall"
         killtask.arguments = ["Finder"]
         killtask.launch()
